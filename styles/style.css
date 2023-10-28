@@ -2,4 +2,236 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    background-image: url("../images/cover-image-dark.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+.recorder {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.recorder:before {
+    content: 'rec';
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.recorder:after {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 2px 2px var(--accent-color);
+    border-radius: 50%;
+}
+
+.decorated-zone:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 10px;
+    border-top: var(--accent-color) 1px solid;
+    border-right: var(--accent-color) 1px solid;
+}
+
+.decorated-zone:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 10px;
+    bottom: 10px;
+    border-left: var(--accent-color) 1px solid;
+    border-bottom: var(--accent-color) 1px solid;
+}
+
+.link-in-text {
+    text-decoration: none;
+    text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+/* Шапка сайта */
+
+.header {
+    position: relative;
+    display: grid;
+    min-height: var(--header-min-height);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+}
+
+.header__theme-menu {
+    place-self: center end;
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__theme-menu-button {
+    background-color: transparent;
+    font-size: var(--font-size-default);
+    font-weight: 400;
+    color: var(--accent-color);
+    padding: 1px 13px;
+    border: 1px transparent solid;
+}
+
+.header__theme-menu-button:hover {
+    appearance: none;
+    border: 1px var(--accent-color) solid;
+}
+
+.header__theme-menu-button:focus {
+    appearance: none;
+    outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+    border-bottom: var(--accent-color) 1px solid;
+}
+
+.header-title {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    line-height: 96px;
+    color: var(--title-color);
+    text-shadow: 4px 4px 0 var(--accent-color);
+    place-self: center start;
+}
+
+.header-description {
+    font-size: var(--font-size-default);
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    place-self: center end;
+}
+
+
+/* Стили для объектов секции main */
+
+.container {
+    background-color: var(--background-color);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 10px;
+}
+
+.content__block-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.content__list__general-item {
+    margin-bottom: 20px;
+}
+
+.content__list__general-item:last-child {
+    margin-bottom: 0;
+}
+
+/** Стили для блока с заголовком и текстом (карточки) **/
+
+.content__title-list {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.card-title-small {
+    font-weight: 400;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-color);
+}
+
+/** Стили для сетки с изображениями **/
+
+.content__images-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    gap: 10px;
+}
+
+.content__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Подвал сайта */
+
+.footer {
+    position: relative;
+    display: grid;
+    min-height: 667px;
+    background-color: var(--background-color);
+}
+
+.footer-title {
+    font-size: 116px;
+    font-weight: 700;
+    line-height: 96px;
+    color: var(--title-color);
+    text-shadow: 4px 4px 0 var(--accent-color);
+    place-self: center;
+}
+
+/*@media (768px <= width < 1024px) {*/
+/*    .content__images-list {*/
+/*        grid-template-columns: repeat(3, 1fr);*/
+/*    }*/
+
+/*    .content__image-item:first-child {*/
+/*        grid-column: span 2;*/
+/*    }*/
+
+/*    .content__image-item:nth-child(2) {*/
+/*        grid-row: span 2;*/
+/*    }*/
+/*    */
+/*}*/

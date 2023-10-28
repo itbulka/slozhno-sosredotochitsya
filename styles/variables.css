@@ -2,3 +2,15 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+    --accent-color: #FF0070;
+    --background-color: #000028;
+    --title-color: #DB00FF;
+    --text-color: #F1B2CE;
+    --font-size-h1: 116px;
+    --font-size-default: 18px;
+
+/* Под вопросом   */
+    --header-min-height: 668px;
+    --footer-min-height: 668px;
+}
