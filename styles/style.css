@@ -335,6 +335,10 @@
         margin-top: 20px;
     }
 
+    .content {
+        padding: 60px 20px;
+    }
+
     .content__second-block__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
