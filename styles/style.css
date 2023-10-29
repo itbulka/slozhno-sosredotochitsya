@@ -2,10 +2,11 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-    background-image: url("../images/cover-image-dark.png");
+    background-image: var(--background-image);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: 'IBM Plex mono', sans-serif, serif;
 }
 
 .recorder {
@@ -15,6 +16,7 @@
     right: 20px;
     gap: 10px;
     align-items: center;
+    visibility: var(--recorder-status);
 }
 
 .recorder:before {
@@ -68,7 +70,7 @@
 
 .link-in-text {
     text-decoration: none;
-    text-shadow: 2px 2px 0 var(--shadow-color);
+    text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .link-in-text:hover {
@@ -93,6 +95,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    text-align: start;
 }
 
 /* Шапка сайта */
@@ -119,7 +122,7 @@
     background-color: transparent;
     font-size: var(--font-size-default-text);
     font-weight: 400;
-    color: var(--accent-color);
+    color: var(--title-color);
     padding: 1px 13px;
     border: 1px transparent solid;
 }
