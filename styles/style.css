@@ -94,7 +94,7 @@
 .text-default {
     font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 23.4px;
     text-align: start;
 }
 
@@ -125,6 +125,7 @@
     color: var(--title-color);
     padding: 1px 13px;
     border: 1px transparent solid;
+    cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -141,6 +142,11 @@
     border-bottom: var(--border-color) 1px solid;
 }
 
+.header__theme-menu-button_active {
+    pointer-events: none;
+    border: 1px var(--border-color) solid;
+}
+
 .header-title-align {
     place-self: center start;
     margin-inline: 10px;
@@ -148,7 +154,7 @@
 }
 
 .header-description {
-    width: clamp(375px, (50% - 375px) * 1000, 50%);
+    width: clamp(355px, (50% - 375px) * 1000, 50%);
     font-size: var(--font-size-default-text);
     font-weight: 700;
     line-height: 24px;
