@@ -63,7 +63,7 @@
 .title-large {
     font-size: var(--font-size-title-large);
     font-weight: 700;
-    line-height: 96px;
+    line-height: 82.5%;
     color: var(--title-large-color);
     text-shadow: 4px 4px 0 var(--shadow-color);
 }
@@ -109,6 +109,7 @@
 
 .header__theme-menu {
     place-self: center end;
+    margin-top: 40px;
 }
 
 .header__theme-menu-list {
@@ -160,6 +161,7 @@
     line-height: 24px;
     place-self: center end;
     margin-inline: 10px;
+    margin-bottom: 35px;
 }
 
 
@@ -242,8 +244,15 @@
         --font-size-title-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
     }
 
+    .header__theme-menu {
+        place-self: end;
+        margin-bottom: 55px;
+    }
+
     .header-description {
+        place-self: start end;
         margin-inline: 20px;
+        margin-top: 45px;
     }
 
     .header__theme-menu-list {
@@ -252,7 +261,7 @@
 
     .content {
         gap: 80px;
-        padding: 60px 20px;
+        padding: 60px 23px;
     }
 
     .content__second-block {
@@ -309,7 +318,7 @@
 
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
 
     :root {
         --header-min-height: 768px;
@@ -318,6 +327,7 @@
 
     .header__theme-menu {
         place-self: start center;
+        margin-top: 0;
     }
 
     .header__theme-menu-list {
