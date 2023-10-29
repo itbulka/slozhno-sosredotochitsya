@@ -255,6 +255,16 @@
         padding: 60px 20px;
     }
 
+    .content__second-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+    }
+
+    .content__second-block__list {
+        grid-column: span 4;
+    }
+
     .content__third-block {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
