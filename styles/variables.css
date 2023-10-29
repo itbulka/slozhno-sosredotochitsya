@@ -5,10 +5,14 @@
 :root {
     --accent-color: #FF0070;
     --background-color: #000028;
-    --title-color: #DB00FF;
+    --title-large-color: #DB00FF;
+    --title-color: #FF0070;
+    --subtitle-color: #000028;
     --text-color: #F1B2CE;
-    --font-size-h1: 116px;
-    --font-size-default: 18px;
+    --shadow-color: #FF0070;
+    --border-color: #FF0070;
+    --font-size-title-large: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-size-default-text: 18px;
 
 /* Под вопросом   */
     --header-min-height: 668px;
