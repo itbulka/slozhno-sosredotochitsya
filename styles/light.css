@@ -13,6 +13,7 @@
     --text-color: #353430;
     --shadow-color: #FF0070;
     --border-color: #353430;
+    --border-color-alpha40: rgba(50, 49, 45, 0.4);
     --background-image: url('../images/cover-image-light.png');
     --recorder-status: hidden;
 }
@@ -27,6 +28,7 @@
         --text-color: #353430;
         --shadow-color: #FF0070;
         --border-color: #353430;
+        --border-color-alpha40: rgba(50, 49, 45, 0.4);
         --background-image: url('../images/cover-image-light.png');
         --recorder-status: hidden;
     }

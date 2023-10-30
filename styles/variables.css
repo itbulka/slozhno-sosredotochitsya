@@ -11,6 +11,7 @@
     --text-color: #F1B2CE;
     --shadow-color: #FF0070;
     --border-color: #FF0070;
+    --border-color-alpha40: rgba(255, 0, 112, 0.4);
     --recorder-status: visible;
     --background-image: url("../images/cover-image-dark.png");
     --font-size-title-large: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
